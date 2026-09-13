@@ -23,7 +23,7 @@ router.get('/product/:id', getProduct)
 router.post('/product', verifyPost, createProduct)
 
 //IMPLEMENTASI DELETE => DELETE
-router.delete('/product/:id', deleteById)
+router.delete('/product/:id', verifyPost, deleteById)
 
 //IMPLEMENTASI PATCH => UPDATE
 router.patch('/user/:id', updateUserById)
